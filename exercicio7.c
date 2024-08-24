@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int main(){
-    int inteiro, endereco;
+    int inteiro;
     int *pi = &inteiro;
-    if (pi % 5 == 0)
+    if ((int)pi % 5 == 0)
     {
         printf("O endereco de memoria eh divisivel por 5");
     }
