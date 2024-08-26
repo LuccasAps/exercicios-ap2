@@ -17,7 +17,6 @@ int main(){
         printf("o maior valor eh %d",*pB);
         return 0;
        }
-
     }else
     {
         *pA = c;
