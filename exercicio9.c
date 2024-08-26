@@ -13,6 +13,9 @@ int main(){
        {
         printf("o maior valor é %d",*pA);
         return 0;
+       }else{
+        printf("o maior valor é %d",*pB);
+        return 0;
        }
 
     }else
