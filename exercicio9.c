@@ -11,23 +11,22 @@ int main(){
        *pB = c;
        if (*pA > *pB)
        {
-        printf("o maior valor é %d",*pA);
+        printf("o maior valor eh %d",*pA);
         return 0;
        }else{
-        printf("o maior valor é %d",*pB);
+        printf("o maior valor eh %d",*pB);
         return 0;
        }
 
     }else
     {
         *pA = c;
-        printf("%d", *pA);
         if (*pB > *pA)
         {
-            printf("o maior valor é %d",*pB);
+            printf("o maior valor eh %d",*pB);
             return 0;
         }else{
-            printf("o maior valor é %d",*pA);
+            printf("o maior valor eh %d",*pA);
             return 0;
         }
     }
