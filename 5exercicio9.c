@@ -1,27 +1,22 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int DesenhaTriangulo(int num){
-    int i,j=0;
-    while(j < (2*num)-1){
-        for(i = 0;i <= num; i++){
-
-            printf("*");
-
-        }
-        for(i = num; i >= 0; i--){
+void triangulo_lateral(int n) {
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i; j++) {
             printf("*");
         }
         printf("\n");
-        j++;
+    }
+    for (int i = n - 1; i > 0; i--) {
+        for (int j = 1; j <= i; j++) {
+            printf("*");
+        }
+        printf("\n");
     }
 }
-int main(){
-    int num;
-    printf("Digite um numero:");
-    scanf("%d",&num);
 
-    DesenhaTriangulo(num);
-
+int main() {
+    int n = 4; 
+    triangulo_lateral(n);
     return 0;
 }
